@@ -5,3 +5,144 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.main-container-class {
+    background-color: rgb(255, 35, 35);
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+    margin-top: 5vh;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+}
+
+.line-top-class {
+    height: 10vh;
+    border-bottom: 2px solid black;
+}
+
+.line-top2-class {
+    height: 10vh;
+    width: 40vw;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.button-red-class, .button-yellow-class, .button-green-class {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.button-red-class {
+    background-color: red;
+    margin-left: 200px;
+}
+
+.button-yellow-class {
+    background-color: yellow;
+}
+
+.button-green-class {
+    background-color: green;
+}
+
+.button-blue-class {
+    background-color: rgb(0, 162, 255);
+    padding: 20px;
+    border-radius: 50%;
+    border:2px solid white;
+    margin-left: 50px;
+    margin-top: 9px;
+}
+
+
+
+/* SCREEN */
+
+.container-screen-class {
+    height: 250px;
+    width: 350px;
+    margin: auto;
+    background-color: gray;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.308);
+}
+
+.screen-class {
+    height: 165px;
+    width: 300px;
+    margin: auto;
+    background-color: white;
+    border-top: 10px solid gray;
+}
+
+.container-responses {
+    height: 70px;
+    width: 300px;
+    margin: auto;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+.container-start-class {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button-start-class, .button-select-class {
+    border-radius: 10px;
+    width: 60px;
+}
+
+.button-start-class {
+    padding: 10px;
+    background-color: red;
+}
+
+.button-select-class {
+    padding: 10px;
+    margin-left: 30px;
+    background-color: rgb(0, 162, 255);
+}
+
+
+/* INPUT */
+
+.insertValues-class {
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+#name-id {
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(61, 170, 61);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.buttonSend-class {
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttonSend-class:hover {
+    background-color: rgb(24, 24, 24);
+    transition: background .4s;
+}
+
+#pokemon1-id {
+    visibility: hidden;
+}
