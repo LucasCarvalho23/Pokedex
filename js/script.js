@@ -9,6 +9,8 @@ class PokedexAPI {
         this.screen = document.querySelector (".screen-class")
         this.containerResponses = document.querySelector (".container-responses")
 
+        this.inputSearch.focus()
+
         this.form.addEventListener("submit", (e) => {
             e.preventDefault()
             this.searchResult()
@@ -18,20 +20,31 @@ class PokedexAPI {
 
     async searchResult() {
         this.url = this.url + this.inputSearch.value
+        this.url = this.url.toLowerCase()
 
         this.response = await fetch (this.url)
         this.data = await this.response.json()
 
-        this.inputName = 'Name: ' + this.data.name + '<br>' + 'Type: ' + this.data.types[0].type.name + '<br>'  + 'Abilitie: ' + this.data.abilities[0].ability.name 
 
-        console.log (this.data)
+        // SEARCH
+
+        this.inputName = 'Name: ' + this.changeInitial(this.data.name) + '<br>' + 'Type: ' + this.changeInitial(this.data.types[0].type.name) + '<br>'  + 'Abilitie: ' + this.changeInitial(this.data.abilities[0].ability.name) 
         
         this.containerResponses.innerHTML = this.inputName
+
+        // IMG
 
         this.valueFront = this.data.sprites.front_default
         this.valueBack = this.data.sprites.back_default
 
-        this.form.innerHTML = "<img src = '" + this.valueFront + "'> <img src = '" + this.valueBack + "'> "
+        this.screen.innerHTML = "<img src = '" + this.valueFront + "'> <img src = '" + this.valueBack + "'> "
+    }
+
+    changeInitial(value) {
+        this.initial = value.charAt(0).toUpperCase()
+        this.final = value.slice(1)
+        return this.initial + this.final
+
     }
 
 }
