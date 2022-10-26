@@ -36,15 +36,18 @@
 
 .button-red-class {
     background-color: red;
-    margin-left: 200px;
+    margin-left: 50%;
+    transform: translate(-50px);
 }
 
 .button-yellow-class {
     background-color: yellow;
+    transform: translate(-50px);
 }
 
 .button-green-class {
     background-color: green;
+    transform: translate(-50px);
 }
 
 .button-blue-class {
@@ -52,7 +55,8 @@
     padding: 20px;
     border-radius: 50%;
     border:2px solid white;
-    margin-left: 50px;
+    margin-left: 50%;
+    transform: translate(-50px);
     margin-top: 9px;
 }
 
@@ -62,7 +66,7 @@
 
 .container-screen-class {
     height: 250px;
-    width: 350px;
+    max-width: 350px;
     margin: auto;
     background-color: gray;
     margin-top: 30px;
@@ -73,7 +77,7 @@
 
 .screen-class {
     height: 165px;
-    width: 300px;
+    max-width: 300px;
     margin: auto;
     background-color: white;
     border-top: 10px solid gray;
@@ -85,7 +89,7 @@ img {
 
 .container-responses {
     height: 70px;
-    width: 300px;
+    max-width: 300px;
     margin: auto;
     background-color: yellow;
     font-weight: bold;
@@ -121,6 +125,8 @@ img {
 .insertValues-class {
     margin-top: 30px;
     margin-left: 130px;
+    text-align: center;
+    transform: translate(-50px);
 }
 
 #name-id {
