@@ -123,6 +123,7 @@
     padding: 10px;
     width: 100px;
     background-color: rgb(61, 170, 61);
+    color: black;
     cursor: pointer;
     font-weight: bold;
     font-family: monospace;
@@ -141,8 +142,4 @@
 .buttonSend-class:hover {
     background-color: rgb(24, 24, 24);
     transition: background .4s;
-}
-
-#pokemon1-id {
-    visibility: hidden;
 }
