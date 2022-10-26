@@ -60,6 +60,12 @@
     margin-top: 9px;
 }
 
+.button-blue-class:hover {
+    background-color: rgb(2, 104, 163);
+    transition: background .4s;
+    cursor: pointer;
+}
+
 
 
 /* SCREEN */
@@ -81,6 +87,11 @@
     margin: auto;
     background-color: white;
     border-top: 10px solid gray;
+}
+
+p {
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 img {

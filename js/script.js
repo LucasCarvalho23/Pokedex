@@ -8,6 +8,7 @@ class PokedexAPI {
         this.form = document.querySelector ("form")
         this.screen = document.querySelector (".screen-class")
         this.containerResponses = document.querySelector (".container-responses")
+        this.ButtonResetSearch = document.querySelector (".button-blue-class")
 
         this.inputSearch.focus()
 
@@ -15,6 +16,8 @@ class PokedexAPI {
             e.preventDefault()
             this.searchResult()
         })
+
+        this.ButtonResetSearch.addEventListener("click", () => this.resetSearch())
 
     }
 
@@ -32,6 +35,7 @@ class PokedexAPI {
         
         this.containerResponses.innerHTML = this.inputName
 
+
         // IMG
 
         this.valueFront = this.data.sprites.front_default
@@ -45,6 +49,10 @@ class PokedexAPI {
         this.final = value.slice(1)
         return this.initial + this.final
 
+    }
+
+    resetSearch() {
+        location.reload()
     }
 
 }
